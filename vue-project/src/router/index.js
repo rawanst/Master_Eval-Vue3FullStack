@@ -4,7 +4,6 @@ import Inscription from "../views/Inscription.vue";
 import Connexion from "../views/Connexion.vue";
 import TodoList from "../views/TodoList.vue";
 import Deconnexion from "../views/Deconnexion.vue";
-import Hasard from "../views/Hasard.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -41,11 +40,6 @@ const router = createRouter({
       path: "/todolist",
       name: "todolist",
       component: TodoList,
-    },
-    {
-      path: "/hasard",
-      name: "hasard",
-      component: Hasard,
     },
   ],
 });
