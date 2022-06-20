@@ -10,6 +10,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/inscription">Inscription</RouterLink>
         <RouterLink to="/connexion">Connexion</RouterLink>
+        <RouterLink to="/deconnexion">Déconnexion</RouterLink>
         <RouterLink to="/todolist">Todo list</RouterLink>
       </nav>
   </header>
