@@ -1,6 +1,8 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "@/components/HelloWorld.vue";
+
+const isConnected = localStorage.user;
 </script>
 
 <template>
@@ -10,7 +12,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/inscription">Inscription</RouterLink>
         <RouterLink to="/connexion">Connexion</RouterLink>
-        <RouterLink to="/deconnexion">Déconnexion</RouterLink>
+        <RouterLink to="/deconnexion" v-if="isConnected">Déconnexion</RouterLink>
         <RouterLink to="/todolist">Todo list</RouterLink>
       </nav>
   </header>
